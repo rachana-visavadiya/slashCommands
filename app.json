@@ -1,0 +1,18 @@
+{
+    "id": "4127b2ae-da5d-4f07-8b1d-dc94208b3258",
+    "version": "0.0.1",
+    "requiredApiVersion": "^1.19.0",
+    "iconFile": "icon.png",
+    "author": {
+        "name": "Baek",
+        "homepage": "rocketchat.com",
+        "support": "support.rocketchat.com"
+    },
+    "name": "testApp",
+    "nameSlug": "testapp",
+    "classFile": "TestAppApp.ts",
+    "description": "Testing examples",
+    "implements": [
+        "IPreFileUpload"
+    ]
+}
