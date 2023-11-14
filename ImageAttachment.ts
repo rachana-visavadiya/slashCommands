@@ -6,5 +6,4 @@ export class ImageAttachment implements IMessageAttachment{
     constructor(imgUrl: string){
         this.imageUrl = imgUrl;
     }
-
 }

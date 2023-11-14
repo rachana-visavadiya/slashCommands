@@ -1,6 +1,6 @@
 import { IHttp, IModify, IPersistence, IRead, IMessageExtender } from '@rocket.chat/apps-engine/definition/accessors';
 import { ISlashCommand, SlashCommandContext } from '@rocket.chat/apps-engine/definition/slashcommands';
-import { ImageAttachment } from '../extend/ImageAttachment';
+import { ImageAttachment } from '../ImageAttachment';
 
 export class ExtendMessageCommand implements ISlashCommand{
     public command = 'extend-message';
@@ -32,6 +32,7 @@ export class ExtendMessageCommand implements ISlashCommand{
 
         return (await modify.getCreator().finish(messageStructure));
     }
+    
     private async getMessageExtender(context: SlashCommandContext, modify: IModify, messageId: string): Promise<IMessageExtender>{
         const sender = context.getSender();
         return modify.getExtender().extendMessage(messageId, sender);
