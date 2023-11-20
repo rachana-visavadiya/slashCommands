@@ -1,6 +1,6 @@
 import { IHttp, IModify, IPersistence, IRead, IMessageExtender } from '@rocket.chat/apps-engine/definition/accessors';
 import { ISlashCommand, SlashCommandContext } from '@rocket.chat/apps-engine/definition/slashcommands';
-import { ImageAttachment } from '../ImageAttachment';
+import { ImageAttachment } from './ImageAttachment';
 
 export class ExtendMessageCommand implements ISlashCommand{
     public command = 'extend-message';
